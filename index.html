@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+
+</head>
+<body>
+<article class="col-md-4 m-auto">
+  <h1>Upload your image</h1>
+  <img src="" class="tmp-image" alt="">
+  <div class="form-group">
+    <label for="">Upload image</label>
+    <input type="file" id="image" class="form-control">
+  </div>
+  <div class="form-group">
+    <button id="upload" class="btn btn-dark col-md-12">
+      Upload
+    </button>
+  <div class="form-group">
+    <button id="readImage" class="btn btn-success col-md-12">
+      Read All Images
+    </button>
+  </div>
+</article>
+
+<article class="uploaded-images-area col-md-4 m-auto">
+  
+</article>
+
+
+<script>
+      const firebaseConfig = {
+      apiKey: "AIzaSyBEjLBG5DaocdWacDFzfugMZE_FDnZjiO4",
+      authDomain: "test-caa82.firebaseapp.com",
+      projectId: "test-caa82",
+      storageBucket: "test-caa82.appspot.com",
+      messagingSenderId: "100317837200",
+      appId: "1:100317837200:web:50c6ff034ece48652da515",
+      measurementId: "G-8343C8Q966"
+    };
+
+      // firebase configuration
+      firebase.initializeApp(firebaseConfig);
+</script>
+  <script src="./main.js"></script>
+  
+</body>
+</html>
